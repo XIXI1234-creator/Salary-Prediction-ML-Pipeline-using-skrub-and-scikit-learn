@@ -1,14 +1,9 @@
 # Salary Prediction ML Pipeline · `skrub` + `scikit-learn`
 
-A clean, reproducible end-to-end machine-learning project that predicts annual
-employee salaries from job-related features.
+A  machine-learning project that predicts annual employee salaries from job-related features.
 The pipeline uses [**skrub**](https://skrub-data.org/) to handle messy
 tabular data effortlessly, and [**scikit-learn**](https://scikit-learn.org/)
 for modeling and evaluation.
-
-> Built as a portfolio project for a quantitative finance / data science
-> student applying to open-source events. Beginner-friendly but
-> structured like a serious production project.
 
 ---
 
@@ -161,26 +156,3 @@ around $7,000 — a strong baseline for a project of this size.
 - Try `XGBoost` or `LightGBM`.
 - Quantile regression for salary intervals instead of point predictions.
 - Add a SHAP explanation step for feature importance.
-
----
-
-## Reproducibility notes
-
-- All randomness uses `random_state = 42`.
-- The dataset is regenerated deterministically by `src/generate_data.py`.
-- Dependencies are pinned with lower bounds in `requirements.txt`.
-- The notebook is committed in *executed* form so plots and tables show on
-  GitHub without running anything.
-
----
-
-## License
-
-MIT — see [LICENSE](LICENSE).
-
-## Acknowledgments
-
-- [**skrub**](https://skrub-data.org/) — for the genuinely useful
-  `TableVectorizer` and `tabular_pipeline`.
-- The dataset schema is inspired by the public
-  [Montgomery County, MD employee salary records](https://data.montgomerycountymd.gov/).
